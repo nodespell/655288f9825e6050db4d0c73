@@ -1,154 +1,36 @@
-import {
-  createBrowserRouter,
-  Link,
-  Outlet,
-  Route,
-  RouterProvider,
-  Routes,
-} from "react-router-dom";
-import "./App.css";
-import logo from "./logo.svg";
+import React from 'react'
+import { createBrowserRouter, RouterProvider, Routes, Route, Link, Outlet } from 'react-router-dom'
 
 const router = createBrowserRouter([{ path: "*", Component: Root }]);
 
-function App() {
-  return <RouterProvider router={router} />;
-}
-
 function Root() {
-  return (
+  return <div>
+  <div>
     <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+      <Route
+        element={<>zhiqi.art<div><React.Fragment key=".0"><Link to="/">Home</Link><Link to="/about">About</Link><Link to="/photos">Photos</Link></React.Fragment></div><Outlet /></>}
+        path=""
+      >
+        <React.Fragment key=".0">
+          <Route
+            element={<img src="https://nodespell-test-bucket.s3.eu-west-2.amazonaws.com/assets/654c07d77eeae9f388478454/cloroq16q000j3b6igg6nk0jx" />}
+            path="/photos"
+          />
+          <Route
+            element="Build great things."
+            path="/about"
+          />
+          <Route
+            element="🚀"
+            path="/"
+          />
+        </React.Fragment>
       </Route>
     </Routes>
-  );
+  </div>
+</div>
 }
 
-function Layout() {
-  const titleText = "Learn React";
-  return (
-    <div className="App">
-      <header className="App-header">
-        <NavBar />
-        <Outlet />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is the NodeSpell test app created by{" "}
-          <code>create-react-app</code>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {titleText}
-        </a>
-      </header>
-      <Footer />
-    </div>
-  );
+export default function App() {
+  return <RouterProvider router={router} />
 }
-
-function NavBar() {
-  const navStyle = {
-    padding: "10px",
-    marginBottom: "15px",
-  };
-
-  const ulStyle = {
-    listStyleType: "none",
-    margin: 0,
-    padding: 0,
-    overflow: "hidden",
-  };
-
-  const liStyle = {
-    float: "left",
-  };
-
-  const linkStyle = {
-    display: "block",
-    color: "white",
-    textAlign: "center",
-    padding: "14px 16px",
-    textDecoration: "none",
-  };
-
-  return (
-    <nav style={navStyle}>
-      <ul style={ulStyle}>
-        <li style={liStyle}>
-          <Link to="/" style={linkStyle}>
-            Home
-          </Link>
-        </li>
-        <li style={liStyle}>
-          <Link to="/about" style={linkStyle}>
-            About
-          </Link>
-        </li>
-        <li style={liStyle}>
-          <Link to="/projects" style={linkStyle}>
-            Projects
-          </Link>
-        </li>
-        <li style={liStyle}>
-          <Link to="/contact" style={linkStyle}>
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <p>Footer</p>
-    </footer>
-  );
-}
-
-function Home() {
-  return (
-    <>
-      <h1>Welcome!</h1>
-      <p>This is a demo section for router.</p>
-    </>
-  );
-}
-
-function About() {
-  return (
-    <>
-      <h1>About</h1>
-      <p>Some information about me.</p>
-    </>
-  );
-}
-
-function Projects() {
-  return (
-    <>
-      <h1>Projects</h1>
-      <p>Here shows the projects</p>
-    </>
-  );
-}
-
-function Contact() {
-  return (
-    <>
-      <h1>Contact</h1>
-      <p>Contact information</p>
-    </>
-  );
-}
-
-export default App;
