@@ -8,12 +8,12 @@ function Root() {
   <div>
     <Routes>
       <Route
-        element={<div style={{margin: '10px'}}><React.Fragment key=".0"><div style={{'align-items': 'center', display: 'flex', 'justify-content': 'space-between'}}><React.Fragment key=".0"><div style={{display: 'flex'}}><React.Fragment key=".0"><div style={{color: 'rgb(160, 30, 250)', fontSize: '30px', fontWeight: '200', 'padding-right': '10px'}}><Link to="/">Home</Link></div><div style={{color: 'rgb(160, 30, 250)', fontSize: '30px', fontWeight: '200', 'padding-right': '10px'}}><Link to="/about">About</Link></div><div style={{color: 'rgb(160, 30, 250)', fontSize: '30px', fontWeight: '200', 'padding-right': '10px'}}><Link to="/photos">Photos</Link></div></React.Fragment></div><div style={{color: 'rgb(180, 30, 20)', fontSize: '20px', fontWeight: '100'}}>zhiqi.art</div></React.Fragment></div><Outlet /></React.Fragment></div>}
+        element={<div style={{display: 'flex', flexDirection: 'column', height: 'calc(100vh - 20px)', justifyContent: 'space-between', margin: '10px', overflowY: 'hidden'}}><React.Fragment key=".0"><div><React.Fragment key=".0"><div style={{'align-items': 'center', display: 'flex', 'justify-content': 'space-between'}}><React.Fragment key=".0"><div style={{display: 'flex'}}><React.Fragment key=".0"><div style={{color: 'rgb(160, 30, 250)', fontSize: '30px', fontWeight: '200', 'padding-right': '10px'}}><Link to="/">Home</Link></div><div style={{color: 'rgb(160, 30, 250)', fontSize: '30px', fontWeight: '200', 'padding-right': '10px'}}><Link to="/about">About</Link></div><div style={{color: 'rgb(160, 30, 250)', fontSize: '30px', fontWeight: '200', 'padding-right': '10px'}}><Link to="/photos">Photos</Link></div></React.Fragment></div><div style={{color: 'rgb(180, 30, 20)', fontSize: '20px', fontWeight: '200'}}>zhiqi.art</div></React.Fragment></div><Outlet /></React.Fragment></div><a href="https://www.nodespell.com" style={{textDecoration: 'none'}} target="_blank">NodeSpell</a></React.Fragment></div>}
         path=""
       >
         <React.Fragment key=".0">
           <Route
-            element="🚀"
+            element={<div style={{undefined: undefined}}>🚀</div>}
             path="/"
           />
           <Route
