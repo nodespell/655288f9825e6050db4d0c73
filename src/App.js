@@ -21,7 +21,7 @@ function Root() {
             path="/about"
           />
           <Route
-            element={<div style={{alignItemsd: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}><React.Fragment key=".0"><img src="https://nodespell-test-bucket.s3.eu-west-2.amazonaws.com/assets/654c07d77eeae9f388478454/cloxl5v1k011p3b6c6c2ux5pk" style={{borderRadius: '10px', margin: '10px', maxWidth: '500px', objectFit: 'cover'}}/><img src="https://nodespell-test-bucket.s3.eu-west-2.amazonaws.com/assets/654c07d77eeae9f388478454/cloxl5v1k011q3b6cwbgfhvoj" style={{borderRadius: '10px', margin: '10px', maxWidth: '500px', objectFit: 'cover'}}/><img src="https://nodespell-test-bucket.s3.eu-west-2.amazonaws.com/assets/654c07d77eeae9f388478454/cloxl5v1k011r3b6cf6l1sb5c" style={{borderRadius: '10px', margin: '10px', maxWidth: '500px', objectFit: 'cover'}}/></React.Fragment></div>}
+            element={<div style={{alignItems: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}><React.Fragment key=".0"><img src="https://nodespell-test-bucket.s3.eu-west-2.amazonaws.com/assets/654c07d77eeae9f388478454/cloxl5v1k011p3b6c6c2ux5pk" style={{borderRadius: '10px', margin: '10px', maxWidth: '500px', objectFit: 'cover'}}/><img src="https://nodespell-test-bucket.s3.eu-west-2.amazonaws.com/assets/654c07d77eeae9f388478454/cloxl5v1k011q3b6cwbgfhvoj" style={{borderRadius: '10px', margin: '10px', maxWidth: '500px', objectFit: 'cover'}}/><img src="https://nodespell-test-bucket.s3.eu-west-2.amazonaws.com/assets/654c07d77eeae9f388478454/cloxl5v1k011r3b6cf6l1sb5c" style={{borderRadius: '10px', margin: '10px', maxWidth: '500px', objectFit: 'cover'}}/></React.Fragment></div>}
             path="/photos"
           />
         </React.Fragment>
